@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "langgraph-documentation"
+version = "0.1.0"
+description = ""
+authors = ["ccw7463 <ccw7463@example.com>"]
+readme = "README.md"
+
+# 포함할 패키지 지정
+packages = [
+    { include = "docs" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+dotenv = "^0.9.9"
+langchain-community = "^0.3.27"
+langchain-openai = "^0.3.30"
+langgraph = "^0.6.4"
+ipython = "^9.4.0"
+rich = "^14.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+
+[tool.poetry.scripts]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
