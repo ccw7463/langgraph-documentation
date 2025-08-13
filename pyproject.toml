@@ -8,6 +8,7 @@ readme = "README.md"
 # 포함할 패키지 지정
 packages = [
     { include = "docs" }
+    { include = "output" }
 ]
 
 [tool.poetry.dependencies]
