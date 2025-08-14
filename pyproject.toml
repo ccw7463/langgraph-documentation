@@ -7,8 +7,9 @@ readme = "README.md"
 
 # 포함할 패키지 지정
 packages = [
-    { include = "docs" }
-    { include = "output" }
+    { include = "docs" },
+    { include = "output" },
+    { include = "utils" }
 ]
 
 [tool.poetry.dependencies]
@@ -22,8 +23,6 @@ rich = "^14.0.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^25.1.0"
-
-[tool.poetry.scripts]
 
 [build-system]
 requires = ["poetry-core"]
